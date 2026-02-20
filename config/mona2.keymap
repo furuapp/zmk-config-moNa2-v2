@@ -76,20 +76,20 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E    &kp R      &kp T                                                              &kp Y        &kp U  &kp I     &kp O     &kp P
-&kp A             &kp S         &kp D    &kp F      &kp G                                  &kp F13                     &kp H        &kp J  &kp K     &kp L     &kp SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &kp C    &kp V      &kp B        &kp LEFT_CONTROL          &kp F15                     &kp N        &kp M  &mkp MB1  &mkp MB2  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp F16  &kp LANG2  &lt 2 SPACE  &lt_to_layer_0 3 LANG1    &lt_to_layer_0 3 BACKSPACE  &lt 1 ENTER                             &kp LEFT_ALT
+&kp Q               &kp W             &kp E    &kp R                      &kp T                                                          &kp Y         &kp U  &kp I     &kp O     &kp P
+&mt LEFT_COMMAND A  &kp S             &kp D    &kp F                      &kp G                                  &kp F13                 &kp H         &kp J  &kp K     &kp L     &kp MINUS
+&mt LEFT_SHIFT Z    &kp X             &kp C    &kp V                      &kp B        &lt 4 SEMICOLON           &kp F15                 &kp N         &kp M  &mkp MB1  &mkp MB2  &kp QUESTION
+&kp LCTRL           &kp LEFT_COMMAND  &kp F16  &mt LEFT_SHIFT LANGUAGE_2  &lt 2 SPACE  &lt_to_layer_0 3 LANG1    &lt_to_layer_0 4 COMMA  &lt 1 PERIOD                             &kp LEFT_ALT
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&scroll_right_left>;
         };
 
         layer_1 {
             bindings = <
-&kp EQUAL     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK                    &kp NUMBER_6  &kp NUMBER_7          &kp NUMBER_8           &kp NUMBER_9  &kp NUMBER_0
+&kp EQUAL     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK                    &kp NUMBER_6  &kp LESS_THAN         &kp GREATER_THAN       &kp NUMBER_9  &kp NUMBER_0
 &kp COMMA     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS                &trans  &trans        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans        &kp BACKSLASH
-&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS     &trans    &trans  &trans        &trans                &trans                 &trans        &kp PIPE
+&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS     &trans    &trans  &trans        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans        &kp PIPE
 &kp SLASH     &kp NUMBER_0  &kp PERIOD    &trans        &trans        &trans    &trans  &trans                                                                   &trans
             >;
 
@@ -98,10 +98,10 @@
 
         layer_2 {
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN  &kp POUND          &kp DOLLAR  &kp PERCENT                      &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp MINUS  &kp UNDERSCORE
-&kp GRAVE        &kp TILDE    &kp DOUBLE_QUOTES  &kp SQT     &trans                  &trans   &mkp MB3   &mkp MB1       &mkp MB2      &kp EQUAL  &kp PLUS
-&kp F1           &kp F2       &kp F3             &kp F4      &kp F5       &kp F11    &kp F12  &kp F6     &kp F7         &kp F8        &kp F9     &kp F10
-&trans           &trans       &trans             &trans      &trans       &trans     &trans   &trans                                             &trans
+&kp EXCLAMATION  &kp AT_SIGN  &kp POUND          &kp DOLLAR  &kp PERCENT                      &kp CARET  &kp AMPERSAND  &kp UP_ARROW    &kp MINUS        &kp UNDERSCORE
+&kp GRAVE        &kp TILDE    &kp DOUBLE_QUOTES  &kp SQT     &trans                  &trans   &mkp MB3   &kp LEFT       &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PLUS
+&kp F1           &kp F2       &kp F3             &kp F4      &kp F5       &kp F11    &kp F12  &kp F6     &kp F7         &kp F8          &kp F9           &kp F10
+&trans           &trans       &trans             &trans      &trans       &trans     &trans   &trans                                                     &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -109,10 +109,10 @@
 
         layer_3 {
             bindings = <
-&trans  &kp LC(LS(TAB))     &kp PRINTSCREEN         &kp LC(TAB)              &trans                                     &trans  &kp HOME        &kp UP_ARROW    &kp END          &trans
-&trans  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)     &kp LC(LG(LEFT_ARROW))   &kp LC(LG(RIGHT_ARROW))            &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &kp LEFT_SHIFT      &kp LG(LS(LEFT_ARROW))  &kp LG(LS(RIGHT_ARROW))  &trans                   &trans    &trans  &trans  &kp DELETE      &kp PAGE_UP     &kp PAGE_DOWN    &trans
-&trans  &trans              &trans                  &trans                   &trans                   &trans    &trans  &trans                                                   &trans
+&trans  &kp LC(LS(TAB))     &kp PRINTSCREEN         &kp LC(TAB)              &trans                                            &trans     &kp HOME        &kp UP_ARROW    &kp END          &trans
+&trans  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)     &kp LC(LG(LEFT_ARROW))   &kp LC(LG(RIGHT_ARROW))            &trans         &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &kp LEFT_SHIFT      &kp LG(LS(LEFT_ARROW))  &kp LG(LS(RIGHT_ARROW))  &trans                   &trans    &trans         &trans     &kp DELETE      &kp PAGE_UP     &kp PAGE_DOWN    &trans
+&trans  &trans              &trans                  &trans                   &trans                   &trans    &kp BACKSPACE  &kp ENTER                                                   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
